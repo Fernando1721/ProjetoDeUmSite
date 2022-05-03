@@ -1,0 +1,223 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  height: 300px; /*Altura da Caixa*/
+  /* Adicionar uma imagem ao fundo */
+
+  background-image: url("../img/img2.jpg");
+  /* ajustar a largura da imagem em 100% */
+
+  background-size: 100%;
+
+  /* Ajustar a posição em X e Y da imagem de fundo */
+
+  background-position: 0px -350px;
+  /* Animação no fundo */
+
+  transition: ease 1s;
+  padding-top: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: arial;
+  font-size: 30pt;
+}
+nav {
+  background-color: rgba(83, 92, 95, 0.733);
+  text-align: center;
+  transition: ease 0.5s;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+nav ul li a {
+  font-family: verdana;
+  font-size: 15pt;
+  color: black;
+  text-decoration: none; /* Nenhum */
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: arial;
+  font-size: 30px;
+  padding: 20px;
+  border-bottom: 1px solid;
+}
+#home p {
+  width: 90%;
+  padding-top: 20px;
+  margin-left: auto; /*para a margem ficar alinhada para a esquerda*/
+  margin-right: auto; /*para margem ficar alinhada para direira*/
+  font-family: "verdana"; /*Tipo de Fonte*/
+  font-size: 12pt; /*Tamanho da Fonte*/
+  line-height: 20pt; /* <-- Espaçamento de Linhas */
+  text-align: justify;
+}
+#imgHome {
+  text-align: center;
+}
+#imgHome img {
+  width: 800px; /*Largura da Imagem*/
+
+  height: 600px; /*Altura da Imagem*/
+
+  margin: 50px; /*Margin da Imagem*/
+
+  opacity: 1; /*Deixar Tranparente a Imagem*/
+
+  transition: ease 0.8s; /*Transição da Imagem*/
+
+  /* Mudar o ponteiro do mouse para uma mão */
+  cursor: pointer;
+}
+#imgHome img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+#imghome2 {
+  padding-top: 20px;
+  text-align: center;
+}
+#imghome2 img {
+  width: 800px; /*Largura da Imagem*/
+
+  height: 600px; /*Altura da Imagem*/
+
+  margin: 50px; /*Margin da Imagem*/
+
+  opacity: 1; /*Deixar Tranparente a Imagem*/
+
+  transition: ease 0.8s; /*Transição da Imagem*/
+
+  /* Mudar o ponteiro do mouse para uma mão */
+  cursor: pointer;
+}
+#imghome2 img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+footer {
+  height: 250px; /* Altura em 300px */
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: verdana;
+
+  /* dispor de forma flexível e em linha */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+footer div {
+  width: 30%;
+  margin: 80px;
+}
+
+#redes ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+#redes ul li a img {
+  width: 50px;
+  height: 50px;
+}
+/* ========================= Inicio da formatação da página motos ==============================*/
+
+h3 {
+  font-size: 30pt;
+  font-family: arial;
+  margin: 30px;
+}
+
+#motos {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*Quebra de Linha*/
+  box-shadow: 2px 2px 10px black;
+  justify-content: center;
+}
+#motos div {
+  width: 45%;
+  margin: 10px;
+  border: 5px solid silver;
+}
+#motos div img {
+  width: 80%;
+  height: 500px;
+}
+#motos div h4 {
+  font-family: arial;
+  font-size: 15pt;
+  margin: 10px;
+}
+#motos div p {
+  font-family: arial;
+  font-size: 15pt;
+  color: darkslategray;
+  margin: 10px;
+  font-weight: bold;
+}
+
+/* ============================ Inicio da formatação contato ===========================*/
+
+main form {
+  width: 30%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main form input[type="text"],
+main form input[type="email"],
+main form input[type="tel"],
+main form select,
+main form textarea {
+  background-color: rgba(189, 185, 185, 0.733);
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  display: block;
+}
+
+main form input[type="tel"],
+main form select {
+  width: 40%;
+}
+main form textarea {
+  height: 100px;
+  border: 2px solid rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+
+main form input[type="submit"] {
+  padding: 10px;
+  border: 0px;
+  background-color: rgb(117, 117, 117);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  border: 2px solid rgb(97, 96, 96);
+}
