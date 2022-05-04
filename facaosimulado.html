@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miranda Agência Motor's</title>
+    <title>Miranda Motor's</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Miranda Agência Motor's</h1>
+        <h1>Miranda Motor's</h1>
     </header>
 
     <nav>
@@ -24,30 +24,41 @@
     </nav>
 
     <main>
-        <h2>Fale Conosco</h2>
-   
-        <form action="">
-            <input type="text" placeholder="Nome Completo" required>
-            <input type="email" placeholder="E-Mail" required>
-            <input type="tel" placeholder="Telefone">
-            <select name="" id="">
-    
-                <option value="Selecione">Selecione</option>
-                <option value="Sugestão">Sugestão</option>
-                <option value="Elogio">Elogio</option>
-                <option value="Dúvida">Dúvida</option>
-                <option value="Crítica">Crítica</option>
-            
-    
+        <h2>Faça o simulado para tirar sua moto!</h2>
+
+        <form onsubmit="return false">
+            <input type="text" placeholder="Nome" id='nome'>
+            <input type="text" placeholder="CPF" id="cpf">
+            <input type="text" placeholder="Email" id='email'>
+            <input type="text" placeholder="Telefone" id="tel">
+
+            <select name="" id="modelo">
+
+                <option value="Selecione">Selecione a moto:</option>
+                <option value="31000">BMW310</option>
+                <option value="45000">BMW R1200</option>
+                <option value="12500">START 160</option>
+                <option value="14000">TITAN 160</option>
+                <option value="29000">MT-03</option>
+                <option value="32000">XJ6</option>
+                <option value="22000">XRE 300</option>
+                <option value="19000">FAZER 250</option>
+                <option value="38000">TIGER 800</option>
+                <option value="32000">XT 660</option>
+                <option value="22000">TWISTER 250</option>
+                <option value="12500">BROS 160</option>
+
             </select>
-            <textarea>
-    
-            </textarea>
-    
+
+            <input type="text" placeholder="Qual o valor da sua entrada acima de R$ 3.000,00" id="entrada"><br>
+
             
-            <input type="submit" value="Enviar">
-        
+            <button onclick="simulador()">Simular</button>
         </form>
+
+
+        
+
     </main>
 
     <footer>

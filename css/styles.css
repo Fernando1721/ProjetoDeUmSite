@@ -1,3 +1,5 @@
+/* ============================ Inicio da formatação da home ===========================*/
+
 * {
   padding: 0px;
   margin: 0px;
@@ -68,12 +70,13 @@ h2 {
   text-align: justify;
 }
 #imgHome {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 #imgHome img {
-  width: 800px; /*Largura da Imagem*/
+  width: 700px; /*Largura da Imagem*/
 
-  height: 600px; /*Altura da Imagem*/
+  height: 500px; /*Altura da Imagem*/
 
   margin: 50px; /*Margin da Imagem*/
 
@@ -83,30 +86,10 @@ h2 {
 
   /* Mudar o ponteiro do mouse para uma mão */
   cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 #imgHome img:hover {
-  transform: scale(1.2);
-  opacity: 1;
-}
-#imghome2 {
-  padding-top: 20px;
-  text-align: center;
-}
-#imghome2 img {
-  width: 800px; /*Largura da Imagem*/
-
-  height: 600px; /*Altura da Imagem*/
-
-  margin: 50px; /*Margin da Imagem*/
-
-  opacity: 1; /*Deixar Tranparente a Imagem*/
-
-  transition: ease 0.8s; /*Transição da Imagem*/
-
-  /* Mudar o ponteiro do mouse para uma mão */
-  cursor: pointer;
-}
-#imghome2 img:hover {
   transform: scale(1.2);
   opacity: 1;
 }
@@ -137,6 +120,9 @@ footer div {
   width: 50px;
   height: 50px;
 }
+
+/* ============================ Fim da formatação da HOME ===========================*/
+
 /* ========================= Inicio da formatação da página motos ==============================*/
 
 h3 {
@@ -176,6 +162,21 @@ h3 {
   font-weight: bold;
 }
 
+.carr {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  border-top-left-radius: 20px;
+}
+
+#carouselExampleControls {
+  width: 700px;
+  height: 500px;
+  border-radius: 30px;
+}
+
+/* ============================ Fim da formatação da página motos ===========================*/
+
 /* ============================ Inicio da formatação contato ===========================*/
 
 main form {
@@ -212,6 +213,32 @@ main form textarea {
 }
 
 main form input[type="submit"] {
+  padding: 10px;
+  border: 0px;
+  background-color: rgb(117, 117, 117);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  border: 2px solid rgb(97, 96, 96);
+}
+
+/* ============================ Fim da formatação da página contato ===========================*/
+
+/* ============================ Inicio da formatação da localização ===========================*/
+
+iframe {
+  width: 800px;
+  height: 500px;
+  padding: 20px;
+  margin-left: 380px;
+}
+
+/* ============================ Fim da formatação da localização ===========================*/
+
+/* ============================ Inicio da formatação da página de simulado ===========================*/
+
+button {
   padding: 10px;
   border: 0px;
   background-color: rgb(117, 117, 117);
