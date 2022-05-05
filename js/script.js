@@ -14,7 +14,7 @@ function simulador(){
 
     var calc = modelo.value - entrada.value
 
-    alert(calc)
+    // alert(calc)
 
     var calc12 = Math.round(calc / 12);
 
@@ -24,22 +24,17 @@ function simulador(){
 
     var calc48 = Math.round(calc / 48);
 
-    alert(`A sua simulação resultou em\n
+    if(confirm(`A sua simulação resultou em:\n
     sua entrada foi de: R$ ${entrada.value}
     O valor da moto é de: R$ ${modelo.value}
     O saldo para parcelar é de: R$ ${calc}
     O valor das parcelas em 12X é de: R$ ${calc12}
     O valor das parcelas em 24X é de: R$ ${calc24}
     O valor das parcelas em 36X é de: R$ ${calc36}
-    O valor das parcelas em 48X é de: R$ ${calc48}`)
+    O valor das parcelas em 48X é de: R$ ${calc48}.\n
+    Deseja cadastrar essa simulação? `)== 1 ){
+        alert("Aceitou!")
 
-    
-
-
-
-
-
-
-
+    }
 
 }
