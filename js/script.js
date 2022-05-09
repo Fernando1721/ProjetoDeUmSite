@@ -33,8 +33,36 @@ function simulador(){
     O valor das parcelas em 36X é de: R$ ${calc36}
     O valor das parcelas em 48X é de: R$ ${calc48}.\n
     Deseja cadastrar essa simulação? `)== 1 ){
-        alert("Aceitou!")
-
+        fetch("http://localhost:8088/api/cliente/cadastrar",{
+            method: "POST",
+            headers: {
+                accept: "application/json",
+                "content-type": "application/json",
+            },
+            body: JSON.stringify({
+                nome:nome.value,
+                cpf:cpf.value,
+                email:email.value,
+                telefone:tel.value,
+                modelo:modelo.value,
+                entrada:entrada.value,
+            })
+        })
+        .then((resultado) => resultado.json())
+        .then((dados)=>{
+            alert(`${dados.output}\n${dados.payload}`);
+            // limpar o formulario
+               nome.value = ""
+                cpf.value = ""
+                email.value = ""
+                tel.value =""
+                modelo.value = ""
+                entrada.value = ""
+        })
+        .catch((err) => console.error(err));
+      
     }
+    
+ 
 
 }
